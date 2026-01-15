@@ -29,9 +29,7 @@ connectDB(MONGO)
       res.json({ ok: true, env: process.env.NODE_ENV || "dev" })
     );
 
-    app.get("/health", (req, res) =>
-      res.json({ msg: "your health is perfect bro" })
-    );
+    
 
     // global error handler
     app.use((err, req, res, next) => {

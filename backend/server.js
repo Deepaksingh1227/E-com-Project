@@ -30,7 +30,7 @@ connectDB(MONGO)
     );
 
     app.get("/health", (req, res) =>
-      res.json({ msg: "your health is perfect" })
+      res.json({ msg: "your health is perfect bro" })
     );
 
     // global error handler
